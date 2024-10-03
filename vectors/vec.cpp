@@ -16,6 +16,6 @@ int main(){
     cout<<"vector second index value is: "<<vec.at(1)<<endl;
 
     for(int val : vec){
-        cout<<vec[val]<<" ";
+        cout<<vec[val]<<;
     } 
 }

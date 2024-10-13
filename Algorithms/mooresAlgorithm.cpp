@@ -1,6 +1,6 @@
 // moore's voting algorithm
   
-        #include<iostream>
+#include<iostream>
 #include<vector>
 using namespace std;
     int majority(vector<int>& nums){

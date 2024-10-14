@@ -8,7 +8,8 @@ int main(){
         for(int j = i+1; j<height.size(); j++){
             int w = j-i;
             int ht = min(height[i], height[j]);
-            maxWater = max(maxWater, w * ht);
+            int currSum = w * ht;
+            maxWater = max(maxWater, currSum);
         }
     }
     cout<<"this container can store the maximum water: "<<maxWater<<"m^2"<<endl;

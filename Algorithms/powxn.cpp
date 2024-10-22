@@ -1,20 +1,25 @@
-#include<iostream>
-#include<vector>
+#include <iostream>
+#include <vector>
 using namespace std;
-int main(){
+int main()
+{
     int x = 3, n = 4;
     long binform = n;
-    if(n<0){
-        x = 1/x;
-        binform = - binform;
+    if (n < 0)
+    {
+        x = 1 / x;
+        binform = -binform;
     }
     double ans = 1;
-    while(binform > 0){
-        if(binform % 2 == 1){
+    while (binform > 0)
+    {
+        if (binform % 2 == 1)
+        {
             ans *= x;
         }
         x *= x;
         binform /= 2;
     }
-    cout<<"3 to the power "<<n<<" is: "<<ans<<endl;
+    cout << "3 to the power " << n << " is: " << ans << endl;
 }
+// github authorized

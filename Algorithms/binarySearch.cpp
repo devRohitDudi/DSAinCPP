@@ -3,7 +3,7 @@
 using namespace std;
 int BinarySearch(vector<int> arr, int target)
 {
-    int st = arr[0], end = arr.size() - 1;
+    int st = 0, end = arr.size() - 1;
     while (st <= end)
     {
         int mid = st + (end - st) / 2;

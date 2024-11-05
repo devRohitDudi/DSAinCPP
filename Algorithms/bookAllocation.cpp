@@ -55,7 +55,7 @@ int allocation(vector<int> arr, int books, int m)
 
 int main()
 {
-    vector<int> arr = {2, 1, 3, 4};
+    vector<int> arr = {15, 17, 20};
     int books = 4, m = 2;
     int ans = allocation(arr, books, m);
     cout << "the minimum value of maximum pages per student is:" << ans << endl;

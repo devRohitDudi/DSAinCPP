@@ -8,7 +8,7 @@ void printArray(int arr[], int n)
     }
 }
 
-void bubbleSort(int arr[], int n)
+void bubbleSort(int arr[], int n) // O(n^2)
 {
     for (int i = 0; i < n - 1; i++)
     {

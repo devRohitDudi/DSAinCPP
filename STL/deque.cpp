@@ -14,5 +14,5 @@ int main()
     }
     cout << endl
          << "value on index is: " << d[2] << endl; // the index is accessible
-    cout << l[2] << endl;
+    cout << l[2] << endl; // not accessible
 }

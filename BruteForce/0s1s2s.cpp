@@ -33,3 +33,4 @@ int main()
         cout << arr[i] << endl;
     }
 }
+2 2 2

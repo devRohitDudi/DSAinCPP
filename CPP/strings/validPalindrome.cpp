@@ -3,9 +3,9 @@
 #include <algorithm>
 using namespace std;
 
-bool isAlphaNumeric(char str)
+bool isAlphaNumeric(char ch)
 {
-    if (str <= 'z' && str >= 'a' && str <= 'Z' && str >= 'A' && str <= 9 && str >= 0)
+    if (tolower(ch) <= 'z' && tolower(ch) >= 'a' || ch <= '9' && ch >= '0')
     {
         return true;
     }
@@ -16,27 +16,34 @@ bool isAlphaNumeric(char str)
 }
 int main()
 {
-    string str = "H@ann*ah";
+    string str = "HA@@@@nn*ah";
 
     int st = 0, end = str.length() - 1;
-
-    string original;
+    bool answer;
     while (st < end)
     {
         if (!isAlphaNumeric(str[st]))
         {
             st++;
-            if (!isAlphaNumeric(str[end]))
-            {
-                end--;
-            }
+            continue;
         }
-        tolower(str[st]);
-        tolower(str[end]);
-        original = str;
-        swap(str[st], str[end]);
+        if (!isAlphaNumeric(str[end]))
+        {
+            end--;
+            continue;
+        }
+
+        if (tolower(str[st] != str[end]))
+        {
+            answer = false;
+        }
+        else
+        {
+            answer = true;
+        }
+        st++, end--;
     }
-    if (original == str)
+    if (answer)
     {
         cout << "yeah, the string: " << str << " is is a valid palindrome." << endl;
     }

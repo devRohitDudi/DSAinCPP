@@ -3,7 +3,7 @@
 using namespace std;
 int main()
 {
-    string str = "hello from ubuntu";
+    string str = "hello from ubuntu"; 
     cout << "enter the paragraph: ";
     getline(cin, str);
 

@@ -12,7 +12,7 @@ int main()
     }
     else
     {
-        cout << "length of string is: " << strlen(str) << " characters" << endl;
+        cout << "length of string is: " << strlen(str) << "  characters" << endl;
     }
 
     int len = 0;

@@ -25,9 +25,16 @@ int GCD(int a, int b)
     }
 }
 
+int GCDrec(int a, int b)
+{
+    if (b == 0)
+        return a;
+    return GCDrec(b, a % b);
+}
+
 int main()
 {
     int a = 28, b = 20;
-    cout << "the Greatest common deviser of " << a << " and " << b << " is: " << GCD(a, b) << endl;
+    cout << "the Greatest common deviser of " << a << " and " << b << " is: " << GCDrec(a, b) << endl;
     return 0;
 }

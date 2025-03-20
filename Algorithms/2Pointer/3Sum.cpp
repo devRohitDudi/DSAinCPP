@@ -34,8 +34,7 @@ vector<vector<int>> threeSum(vector<int> &nums)
                 ans.push_back({nums[i], nums[j], nums[k]});
                 j++;
                 k--;
-                if (j < k && nums[j] == nums[j - 1])
-                    j++; // for optimization
+                while (j < k && nums[j] == nums[j - 1])j++; //skip all duplicates
             }
         }
     }
